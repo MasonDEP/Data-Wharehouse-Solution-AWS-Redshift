@@ -10,11 +10,11 @@ As to the schema design, 4 fact tables that contained detailed inforamtion on us
 
 ## Data Process Flow
 
-RAW ZONE --> STAGING ZONE --> CURATION ZONE
+>[RAW ZONE] --> [STAGING ZONE] --> [CURATION ZONE]
 
-RAW ZONE: The source data are a number of json files residing in a set of s3 directories.
-STAGING ZONE: The data is copied to the 'events_staging' and 'songs_staging' tables without any transformation.
-CURATION ZONE: The data is transformed and loaded into the 4 dimention tables and 1 fact table in the curation zone.
+- RAW ZONE: The source data are a number of json files residing in a set of s3 directories.
+- STAGING ZONE: The data is copied to the 'events_staging' and 'songs_staging' tables without any transformation.
+- CURATION ZONE: The data is transformed and loaded into the 4 dimention tables and 1 fact table in the curation zone.
 
 
 ## Source Data
